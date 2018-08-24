@@ -25,6 +25,7 @@
 	background: none;
 }
 .top{
+
 }
 .bottom{
 	text-align: center;
@@ -37,8 +38,8 @@
 	width: auto;
 	font-size: 100px;
 	height: auto;
-	margin: 0 auto;
 }
+
 .bottom #description{
 	width: 50%;
 	height: auto;
@@ -87,6 +88,69 @@
 
 @keyframes planet{
 	to{
-		transform: rotate(360deg);
+		transform: rotate(-360deg);
 	}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.container{
+			grid-template-rows: 10% 40% auto 5%;
+	}
+	.top #plt{
+		left: 30%;
+
+	}
+	.top #sat{
+		left: 50%;
+
+	}
+	.top #ast{
+		top: 28%;
+		left: 35%;	
+
+
+	}
+	.bottom #heading{
+		font-size: 150px;
+	}
+	.bottom #description{
+		width: 70%;
+		font-size: 40px;
+	}
+	.footer{
+		font-size: larger;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	.container{
+			grid-template-rows: 10% 30% auto 5%;
+	}
+	.top #plt{
+		left: 30%;
+		width: 25px;
+	}
+	.top #sat{
+		left: 50%;
+		width: 125px;
+	}
+	.top #ast{
+		top: 25%;
+		left: 35%;	
+		width: 50px;
+	}
+	.bottom #heading{
+		font-size: 100px;
+	}
+	.bottom #description{
+		width: 70%;
+		font-size: 30px;
+	}
+	.footer{
+		font-size: smaller;
+	}
+
 }
